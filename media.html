@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Media Element</title>
+</head>
+<body>
+    <header>
+        <h1> About Quadri Olasubomi Esther</h1>
+    </header>
+    <main>
+        <h3>Image</h3>
+        <p>Here are some thoughts from me!</p>
+        <picture>
+            <!-- Source for devices with width >= 1024px (laptops and desktops)-->
+            <source media="(min-width: 1024px)" src="images/Screenshot_20240805_012021_Samsung Notes.jpg" >
+
+            <!-- Source for devices with width between 768px and 1023px (tablets)-->
+             <source media=" (min-width: 768px)" src="images/Screenshot_20240805_012021_Samsung Notes.jpg">
+
+            <!-- Source for devices with width < 768px (mobiles)-->
+             <source media="(min-width: 767px)" src="images/Screenshot_20240805_012021_Samsung Notes.jpg">
+
+             <!-- Fallback image for older browsers that do not support the picture element-->
+             <img src="images/Screenshot_20240805_012021_Samsung Notes.jpg" alt="My thoughts"  width="500" height="500">
+
+
+            
+        </picture>
+
+         <h3>Video</h3>
+        <p> Also, here is a video of my art!</p>
+        <video src="videos/lv_0_20240710165739.mp4" controls width="500" height="500"></video></video>
+        <h3>Audio</h3>
+        <p> And last but not the least, a song I listen to that keeps me going.</p>
+        <audio src="audio/BABYMONSTER_-_DREAM.mp3" controls></audio>
+    </main>
+
+    <style>
+        h3{
+            color: brown;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p {
+            font-family: cursive;
+        }
+
+        body {
+            background-color: rgb(214, 187, 151);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            display: block;
+        }
+    </style>
+
+</body>
+</html>
